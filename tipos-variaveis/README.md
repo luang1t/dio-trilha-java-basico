@@ -1,88 +1,95 @@
-📚 Estudo: Tipos de Dados e Strings em Java
+# 📚 Estudo: Tipos de Dados e Strings em Java
 
-Um projeto simples para demonstrar os conceitos fundamentais dos tipos de dados primitivos e da manipulação de String na linguagem Java. Ideal para consulta rápida e para quem está iniciando os estudos.
+Este projeto simples demonstra os **conceitos fundamentais de tipos de dados primitivos** e a **manipulação da classe `String`** na linguagem Java. É ideal para estudantes iniciantes ou para consulta rápida.
 
-Status do Projeto: ✅ Concluído
+> **Status do Projeto:** ✅ Concluído
 
-✨ Conceitos Abordados
-1. Tipos de Dados Primitivos
+---
 
-A tabela abaixo resume os tipos primitivos utilizados no código, com seus respectivos tamanhos e finalidades.
+## ✨ Conceitos Abordados
 
-Tipo	Tamanho (bits)	Descrição	Exemplo no Código
-:---	:---:	:---	:---
-byte	8	Armazena números inteiros pequenos.	byte idade = 25;
-short	16	Armazena números inteiros curtos.	short ano = 2000;
-int	32	Padrão para números inteiros.	int salario = 2500;
-long	64	Para números inteiros muito longos (sufixo L).	long pop = 215000000L;
-float	32	Para números decimais (sufixo f).	float temp = 36.5f;
-double	64	Padrão para decimais com alta precisão.	double altura = 1.68;
-char	16	Armazena um único caractere Unicode (aspas simples).	char genero = 'M';
-boolean	1	Armazena valores lógicos: true ou false.	boolean brasileiro = true;
+### 🔢 Tipos de Dados Primitivos
 
-Conversão de Tipos (Casting): O código também demonstra como forçar a conversão de um tipo maior para um menor, como (int) 3.14, que resulta em 3.
+Abaixo, os tipos primitivos utilizados no código, com suas descrições e exemplos:
 
-2. Manipulação de Strings
+| Tipo     | Tamanho (bits) | Descrição                                                    |Exemplo                      |
+|----------|----------------|--------------------------------------------------------------|-----------------------------|
+| `byte`   | 8              | Armazena números inteiros pequenos (-128 a 127)              | `byte idade = 25;`          |
+| `short`  | 16             | Armazena números inteiros curtos (-32.768 a 32.767)          | `short ano = 2000`          |
+| `int`    | 32             | Inteiros padrão, mais usados                                 | `int salario = 2500`        |
+| `long`   | 64             | Inteiros longos, com sufixo `L` no final                     | `long populacao = 2150000L` |
+| `float`  | 32             | Números decimais com menor precisão, sufixo `f`              | `float temperatura = 36.5f` |
+| `double` | 64             | Decimais com alta precisão                                   | `double altura = 1.68`      |
+| `char`   | 16             | Um único caractere Unicode, com aspas simples                | `char genero = 'M'`         |
+| `boolean`| 1              | Verdadeiro ou falso                                          | `boolean brasileiro = true` |
 
-A classe String é essencial para trabalhar com textos. O projeto demonstra as seguintes operações:
+#### 🧠 Conversão de Tipos (Casting)
+O código também mostra como forçar a conversão de tipos maiores para menores, por exemplo:
+```java
+int teste = (int) 3.14; // resultado: 3
 
-🤝 Concatenação: Junção de strings usando o operador +.
-📏 length(): Retorna o número de caracteres da string.
-🔄 toUpperCase() / toLowerCase(): Converte a string para maiúsculas ou minúsculas.
-🔍 equals() / equalsIgnoreCase(): Compara o conteúdo de duas strings. Essencial para evitar o uso de ==.
 
-🔎 contains(): Verifica se uma sequência de caracteres existe dentro da string.
+📝 Manipulação de Strings
+A classe String é essencial para trabalhar com texto em Java. O código cobre diversas operações básicas, como:
 
-✂️ substring(): Extrai um pedaço da string.
-✨ trim(): Remove espaços em branco do início e do fim.
-🏁 startsWith(): Verifica se a string começa com um determinado prefixo.
+| Operação                 | Exemplo de Código                             | Descrição                               |
+| ------------------------ | --------------------------------------------- | --------------------------------------- |
+| Concatenar               | `"Olá, " + nome + "!"`                        | Junta strings com `+`                   |
+| Comprimento (`length()`) | `texto.length()`                              | Retorna número de caracteres            |
+| Maiúsculas/Minúsculas    | `texto.toUpperCase()` / `texto.toLowerCase()` | Converte o texto                        |
+| Comparar conteúdo        | `a.equals(b)` / `equalsIgnoreCase()`          | Compara corretamente duas strings       |
+| Verificar conteúdo       | `frase.contains("Java")`                      | Verifica se há um texto dentro de outro |
+| Substring                | `frase.substring(0, 3)`                       | Retorna parte da string                 |
+| Remover espaços          | `texto.trim()`                                | Remove espaços do início/fim            |
+| Começa com               | `texto.startsWith("Luan")`                    | Verifica prefixo                        |
+
+
 🚀 Como Executar
-Pré-requisitos
-É necessário ter o JDK (Java Development Kit) instalado e configurado no seu sistema.
-Passos
-Clone o repositório:
+
+✔️ Pré-requisitos
+Ter o Java JDK instalado e configurado no sistema.
+
+🔧 Passos:
+
+1. Clone o repositório:
 
     git clone <URL_DO_SEU_REPOSITORIO>
 
-Navegue até a pasta do projeto e compile o arquivo .java:
+2. Acesse o diretório do projeto:
 
-    cd <NOME_DA_PASTA>
+    cd <nome_da_pasta>
+
+3. Compile o arquivo:
+
     javac TiposVariaveis.java
 
-Execute o programa:
+4. Execute o programa:
 
     java TiposVariaveis
 
+
 📥 Saída Esperada
 
-A execução do código produzirá o seguinte resultado no terminal:
+Ao rodar o programa, a saída será semelhante a:
 
 Casting, transformando número float em inteiro antes era 3.14 agora é: 3
-
 Idade: 25
-
 Ano de nascimento: 2000
-
 Salário: 2500
-
 População: 215000000
-
 Temperatura: 36.5
-
 Altura: 1.68
-
 Gênero: M
-
 É brasileiro? true
-
 Olá, Luan Rodrigues!
-
 Nome completo: Luan Rodrigues
-
 Seu nome tem 14 caracteres!
-
 Em maiúscula: LUAN RODRIGUES
-
 Começa com 'Luan'? true
-
 Contém 'Rod'? true
+
+
+🤝 Contribuição
+Este projeto é educacional, mas sinta-se à vontade para sugerir melhorias ou adicionar novos exemplos com String, arrays ou outros conceitos Java.
+
+
