@@ -1,52 +1,61 @@
-Estudo de Tipos de Variáveis e Strings em Java
+📚 Estudo: Tipos de Dados e Strings em Java
 
-Este repositório contém um código Java simples (TiposVariaveis.java) criado para demonstrar os tipos de dados primitivos e as operações básicas com a classe String em Java. É um projeto de estudo ideal para iniciantes que estão aprendendo os fundamentos da linguagem.
+Um projeto simples para demonstrar os conceitos fundamentais dos tipos de dados primitivos e da manipulação de String na linguagem Java. Ideal para consulta rápida e para quem está iniciando os estudos.
 
-🚀 Conteúdo Abordado
+Status do Projeto: ✅ Concluído
 
-O código demonstra os seguintes conceitos fundamentais:
+✨ Conceitos Abordados
+1. Tipos de Dados Primitivos
 
-Tipos de Dados Primitivos
-byte: Para números inteiros pequenos (-128 a 127).
-short: Para números inteiros curtos (-32.768 a 32.767).
-int: Tipo padrão para números inteiros.
-long: Para números inteiros longos (requer o sufixo L).
-float: Para números de ponto flutuante (requer o sufixo f).
-double: Tipo padrão para números decimais com maior precisão.
-char: Para um único caractere (usando aspas simples).
-boolean: Para valores true ou false.
-Conversão de Tipos (Casting)
-Demonstração de como converter um tipo de dado maior para um menor de forma explícita (ex: double para int).
-Classe String
-Declaração e Concatenação: Criação e junção de strings.
-length(): Obter o tamanho da string.
-toUpperCase() e toLowerCase(): Converter para maiúsculas e minúsculas.
-equals() e equalsIgnoreCase(): Comparar o conteúdo de strings (a forma correta, evitando o uso de ==).
-contains(): Verificar se a string contém uma sequência de caracteres.
-substring(): Extrair parte de uma string.
-trim(): Remover espaços em branco no início e no fim.
-startsWith(): Verificar se a string começa com um determinado prefixo.
-💻 Como Executar
-Certifique-se de ter o JDK (Java Development Kit) instalado em sua máquina.
-Clone este repositório:
-Bash
-Copiar
+A tabela abaixo resume os tipos primitivos utilizados no código, com seus respectivos tamanhos e finalidades.
+
+Tipo	Tamanho (bits)	Descrição	Exemplo no Código
+:---	:---:	:---	:---
+byte	8	Armazena números inteiros pequenos.	byte idade = 25;
+short	16	Armazena números inteiros curtos.	short ano = 2000;
+int	32	Padrão para números inteiros.	int salario = 2500;
+long	64	Para números inteiros muito longos (sufixo L).	long pop = 215000000L;
+float	32	Para números decimais (sufixo f).	float temp = 36.5f;
+double	64	Padrão para decimais com alta precisão.	double altura = 1.68;
+char	16	Armazena um único caractere Unicode (aspas simples).	char genero = 'M';
+boolean	1	Armazena valores lógicos: true ou false.	boolean brasileiro = true;
+
+Conversão de Tipos (Casting): O código também demonstra como forçar a conversão de um tipo maior para um menor, como (int) 3.14, que resulta em 3.
+
+2. Manipulação de Strings
+
+A classe String é essencial para trabalhar com textos. O projeto demonstra as seguintes operações:
+
+🤝 Concatenação: Junção de strings usando o operador +.
+📏 length(): Retorna o número de caracteres da string.
+🔄 toUpperCase() / toLowerCase(): Converte a string para maiúsculas ou minúsculas.
+🔍 equals() / equalsIgnoreCase(): Compara o conteúdo de duas strings. Essencial para evitar o uso de ==.
+
+🔎 contains(): Verifica se uma sequência de caracteres existe dentro da string.
+
+✂️ substring(): Extrai um pedaço da string.
+✨ trim(): Remove espaços em branco do início e do fim.
+🏁 startsWith(): Verifica se a string começa com um determinado prefixo.
+🚀 Como Executar
+Pré-requisitos
+É necessário ter o JDK (Java Development Kit) instalado e configurado no seu sistema.
+Passos
+Clone o repositório:
+
     git clone <URL_DO_SEU_REPOSITORIO>
 
-Navegue até o diretório onde o arquivo foi salvo.
-Compile o arquivo Java:
-Bash
-Copiar
+Navegue até a pasta do projeto e compile o arquivo .java:
+
+    cd <NOME_DA_PASTA>
     javac TiposVariaveis.java
 
 Execute o programa:
-Bash
-Copiar
+
     java TiposVariaveis
 
-📋 Exemplo de Saída
+📥 Saída Esperada
 
-Ao executar o programa, você verá a seguinte saída no console:
+A execução do código produzirá o seguinte resultado no terminal:
 
 Casting, transformando número float em inteiro antes era 3.14 agora é: 3
 
