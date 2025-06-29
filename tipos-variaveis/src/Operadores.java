@@ -40,7 +40,7 @@ public class Operadores {
 
         System.out.println(++variavel);// Se o ++ estiver depois do nome da variavel no () ele vai printar somente o
                                        // valor sem incrementação, mas se ele estiver antes da variavel no () como está
-                                       // acima ele faz primeiro a operação depois a atribuição.
+                                       // ao lado ele faz primeiro a operação depois a atribuição.
 
         System.out.println(variavel--);
         System.out.println(variavel);
